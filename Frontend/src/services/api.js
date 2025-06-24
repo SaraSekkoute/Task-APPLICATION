@@ -16,3 +16,9 @@ export const createProduct = (data) => axios.post(`${API_BASE}/products`, data);
 export const updateProduct = (id, data) => axios.put(`${API_BASE}/products/${id}`, data);
 export const deleteProduct = (id) => axios.delete(`${API_BASE}/products/${id}`);
 
+// Tasks
+export const getTasks = () => axios.get(`${API_BASE}/tasks`);
+export const getTask = (id) => axios.get(`${API_BASE}/tasks/${id}`);
+export const createTask = (data) => axios.post(`${API_BASE}/tasks`, data);
+export const updateTask = (id, data) => axios.put(`${API_BASE}/tasks/${id}`, data);
+export const deleteTask = (id) => axios.delete(`${API_BASE}/tasks/${id}`);
